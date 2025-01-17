@@ -157,23 +157,92 @@ We will be doing this lab on a provisioned Windows 10 OS on MidTap.
 
 ![image](https://github.com/user-attachments/assets/cdec71c7-be21-42a2-80ff-308ae6b5601c)
 
+The following steps will demonstrate how to acquire an image of the drive labeled E, named USB. Please note that this is not an actual USB drive, but a fixed drive on the computer.
+
+The process of acquiring an image can be applied to other types of media as well, including fixed disk drives and portable storage devices like USB flash drives.
+
+2. Right-click Autopsy 4.6.0 on desktop, then click Run as administrator on the menu. Click Yes in the UAC if necessary.
+![image](https://github.com/user-attachments/assets/1104f0b8-da79-48a1-bb46-56394b84db5b)
 
 
+3. In the Autopsy welcome window, click New Case.
+![image](https://github.com/user-attachments/assets/2fa41a1c-9186-4669-b14a-ceb7028471c2)
+
+4. In the New Case Information box, type Proj01 in the Case Name box and set the Base Directory to Work. Click Next.
+![image](https://github.com/user-attachments/assets/d7249f82-8d64-4550-8f95-d63f42b0904f)
+
+5. In the Optional Information box, click Finish.
+![image](https://github.com/user-attachments/assets/24d899fa-bb8e-4d8e-ad56-92c9d18665ee)
+
+6. In the Add Data Source dialog box, click Local Disk, and click Next.
+![image](https://github.com/user-attachments/assets/a32b32f8-1f39-4fc6-a6bf-a6cbda15f449)
+
+7. In the Select Data Source box, select the disk USB (E:), then click Next.
+  ![image](https://github.com/user-attachments/assets/e0dde5a6-c958-4cbf-984d-f09b225c1fca)
+
+8. Click Next in the Configure Ingest Modules window.
+
+9. Once the drive is finished being analyzed, click Finish
+![image](https://github.com/user-attachments/assets/459bc727-2fd2-44f2-ba73-3f9392fcfd3a)
 
 
+10. Click Case, select Exit from the menu to exit Autopsy.
+![image](https://github.com/user-attachments/assets/99bef6cc-012c-4e1a-b7c1-c0d4013aa36d)
 
 
-
-
-
-
-
-
-
+THIS EXERCISE COMPLETES MY FIRST FORENSICS DATA ACQUISITION.
 </details>
 
 
+<details>
 
+<summary><b>USING AUTOPSY TO ANALYZE EVIDENCE</b></summary>
+
+In the following steps, I will analyze George Montgomery’s drive. The first task is loading the acquired image into Autopsy by following these steps:
+
+1. Start Autopsy as an Admin
+ ![image](https://github.com/user-attachments/assets/72b1d5aa-d69e-4bb5-902f-60538de175a1)
+ 
+2. Create a new Case by clicking on New case
+
+3.  In the Case Information dialog box, in the Case Name text box, type:  InChp01.  The name is solely for this lab.   However, you can use the name of the case you will be working on.
+ ![image](https://github.com/user-attachments/assets/8d721922-47eb-4324-8ae1-8e9e986d63b0)
+Set the Base Directory to your Work directory. Click Next.
+
+4. Click Finish in the Optional Information dialog box.
+![image](https://github.com/user-attachments/assets/a44ed6af-5a85-4612-bb2a-e47465892675)
+
+4. In the Add Data Source box, click Disk Image or VM File and click Next.
+![image](https://github.com/user-attachments/assets/51df3b45-56e9-4ffa-b14d-7c4a838f4e1d)
+
+
+5. Leave Autopsy open and open File Explorer. Navigate to the folder C:\Work > Data files > Ch01 containing the image. Right click Ch01Inchp01.exe, point to 7-zip, then click Extract Here to extract the contents. Close File Explorer.
+![image](https://github.com/user-attachments/assets/fb8975b0-56dc-4cf4-b38f-e815e786e852)
+
+6. Back in Autopsy, click Browse then navigate to C:\Work > Data files > Ch01 and click InChp01.dd, then click Open. Click Next.
+![image](https://github.com/user-attachments/assets/5879fe8e-3796-4fed-b95c-8e5c03137745)
+
+7. Click Next in the Configure Ingest Modules dialog box. Once the data source has been added, click Finish.
+![image](https://github.com/user-attachments/assets/4ae07ee4-a82f-4ed1-98cf-4f0f75c1a642)
+
+8. Click to expand Data Sources > Inchp01.dd in the left navigation pane. The Inchp01.dd file is then loaded in the main window.
+![image](https://github.com/user-attachments/assets/07c8943a-5fd7-41a0-bb8e-2ebb69a7d04f)
+
+9. In the right pane (the work area), click the confirmation.txt file to view its contents in the data area
+![image](https://github.com/user-attachments/assets/1120f711-86bc-43e1-be98-3a802a0e7c32)
+
+In the data area, you see the contents of the confirmation.txt file. Continue to navigate through the work and data areas and inspect the contents of the recovered evidence.
+
+
+
+
+
+ 
+
+
+
+  
+</details>
 
 
 
