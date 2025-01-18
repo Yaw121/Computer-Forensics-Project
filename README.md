@@ -343,7 +343,48 @@ Type fragment in the list box for search keywords, click the Substring Match opt
 Upon examining the bit-stream image of the USB drive, two files, file4.dat and file6.dat, were discovered. These files are of particular interest in light of the concern regarding the former employee's potential possession of sensitive company data. To address the Law Department's request, the next step would be to determine if these files contain any references or fragments related to the 24 confidential documents, which are known to include the text "fragment." These files will be further analyzed to ascertain their relevance to the ongoing investigation and whether they might hold any significant data related to the company’s sensitive information.
 </details>
 
+<details>
+<summary><b>SCENARIO 3</b></summary>
 
+  <b>SCENARIO</b>
+
+  Ms. Jones notifies you that the former employee has used an additional drive. She asks you to examine this new drive to determine whether it contains an account number the employee might have had access to. The keyword 1cro belongs to the senior vice president and is used to access the company's banking service over the Internet.
+
+<b>STEPS</b>
+
+1. Start Autopsy.
+In the Welcome dialog box, click New Case, then enter the case name C1Prj03, and make C:\Work\Data files\Ch01\ the Base Directory and then click Next. Click Finish.
+![image](https://github.com/user-attachments/assets/8c3a88c5-75ff-4618-b13f-3c2034a3b387)
+
+2. To add the evidence, click Disk Image or VM File, then click Next.
+Navigate to C:\Work\Data files\Ch01\, click All Files, then click FATSearchTestImage.eve, and click Open.
+![image](https://github.com/user-attachments/assets/fb343be0-8fe7-4cf1-8aa8-47489fbfc55a)
+
+3. On the Select Data Source window, click Next.
+
+4. Click Next in the Configure Ingest Modules window, then click Finish.
+ Click Data Sources to expand the image file and select FatSearchTestImage.eve.
+![image](https://github.com/user-attachments/assets/3b853fe1-9110-4618-bb7c-d92974708d06)
+
+5. so you're still looking for occurrences of the word "fragment." Open the Search dialog box, and repeat Steps 5 through 7 of Hands-On Project 1-2 for this drive image. When you view the search results, right-click to select any files of interest, select Add File Tag, click Notable Item (Notable) from the Tag drop-down menu, add a comment, and click OK.
+![image](https://github.com/user-attachments/assets/eeb7bac7-dca0-4179-9c9d-b8d0fece2398)
+
+ 6. Next, search for the keyword 1cro Ms. Jones gave you. Click the Keyword Search toolbar button. Type 1cro as the search keyword. Click Search.
+Remember to select any files of interest and enter notes in the Add Comment dialog box.  
+![image](https://github.com/user-attachments/assets/af803a93-aef9-4ce2-9f04-837bf34c5421)
+
+7.When you're finished, click the Tools menu and select Generate Report. Next, click Next in the Generate Report dialog box to accept the HTML report's default. Then click Next on the Select which data source(s) to include window and click Finish.
+![image](https://github.com/user-attachments/assets/a7607118-17f3-4e15-926f-4a17a5c89b7e)
+![image](https://github.com/user-attachments/assets/b04db9df-0238-45fc-8c66-dd4abe167f99)
+
+
+8. Click the HTML Report to open the report in your favorite browser. Write a short memo to summarize what you found. Save the project and exit Autopsy.
+Close Autopsy.
+![image](https://github.com/user-attachments/assets/982b1eb4-c3c6-4661-b5fb-d74c0a534222)
+
+
+  
+</details>
 
 
 
