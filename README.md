@@ -311,16 +311,36 @@ In the Save As dialog box that opens, navigate to the location where you want to
 Upon examining the acquired image of the USB drive (daylightTest.eve), two plain text files were identified: winter.txt and summer.txt. The content of winter.txt includes the text "2 pm," while summer.txt contains the text "3 pm." These times may hold significance in relation to the case, possibly indicating key moments that could be relevant to the timeline of events surrounding the suspicious death. The presence of these files and their specific references to times could potentially correlate with statements or evidence already collected, and further analysis may be necessary to determine their connection to the incident. As such, these files will be further investigated to understand their context and potential relevance to the ongoing investigation.
 </details>
 
+
+
 <details>
   <summary><b>SCENARIO 2</summary>
+
 
 In this project, you work for a large corporation’s IT security company. Your duties include conducting internal computing investigations and forensics examinations on company computing systems. A paralegal from the Law Department, Ms. Jones, asks you to examine a USB drive belonging to an employee who left the company and now works for a competitor. The Law Department is concerned that the former employee might possess sensitive company data. Ms. Jones wants to know whether the USB drive contains anything significant.
 
 In addition, she informs you that the former employee might have had access to confidential documents because a co-worker saw him accessing his manager’s computer on his last day of work. These confidential documents consist of 24 files with the text “fragment.” She wants you to locate any occurrences of these files on the USB drive’s bit-stream image.
 
-    <b>STEPS<b>
+<b>SSTEPS</b>
 
+1. Start Autopsy. In the Welcome dialog box, click New Case, then enter the case name C1Prj02, and make C:\Work\Data files\Ch01\ the Base Directory and then click Next. Click Finish.
+![image](https://github.com/user-attachments/assets/f10cd10f-a6e9-4fbc-98fe-566059ffdb3d)
 
+2. Click Disk Image or VM File, then click Next.
+Navigate to C:\Work\Data files\Ch01\, click All Files, then click FATSearchTestImage.eve, and then click Open.
+![image](https://github.com/user-attachments/assets/9b1dcb3c-d5a8-4076-82e5-4070ba8907ec)
+
+3. Click Next in the Configure Ingest Modules window, then click Finish.
+Click to expand to expand the image file.
+![image](https://github.com/user-attachments/assets/37ccdfbf-d658-49e7-b7ea-b7f312ff1aff)
+
+4. To search for the keyword “fragment,” click the Keyword Search toolbar button to open the Search dialog box.
+Type fragment in the list box for search keywords, click the Substring Match option button, then click Search.
+
+![image](https://github.com/user-attachments/assets/f9d13f36-9c48-4c2f-ae65-48149b3df57e)
+
+<b>FINAL REPORT</b>
+Upon examining the bit-stream image of the USB drive, two files, file4.dat and file6.dat, were discovered. These files are of particular interest in light of the concern regarding the former employee's potential possession of sensitive company data. To address the Law Department's request, the next step would be to determine if these files contain any references or fragments related to the 24 confidential documents, which are known to include the text "fragment." These files will be further analyzed to ascertain their relevance to the ongoing investigation and whether they might hold any significant data related to the company’s sensitive information.
 </details>
 
 
