@@ -232,18 +232,90 @@ Set the Base Directory to your Work directory. Click Next.
 ![image](https://github.com/user-attachments/assets/1120f711-86bc-43e1-be98-3a802a0e7c32)
 
 In the data area, you see the contents of the confirmation.txt file. Continue to navigate through the work and data areas and inspect the contents of the recovered evidence.
-
-
-
-
-
- 
-
-
-
-  
 </details>
 
+
+<details>
+<summary><b>ANALYZING DATA</b></summary>
+
+The next step involves analyzing the data and searching for information relevant to the complaint. This can be time-consuming, even if you know what to look for. To locate evidentiary artifacts, forensic analysts search for specific data values, which can include unique words, nonprintable characters (e.g., hexadecimal codes), or special printable characters like copyright (©) or registered trademark (®) symbols. Forensic tools, like Autopsy, allow you to search for these "keywords," which may consist of character strings or hexadecimal values (e.g., A9 for copyright). For this case, you will follow the steps to search for any reference to the name "George."
+
+1. In the Autopsy window, Expand Data Sources > Inchp01.dd. Click Keyword Search in the upper-right hand corner. In the Search text box, type: password and click Search
+   ![image](https://github.com/user-attachments/assets/83e7de34-f921-49d8-afd5-2cc8954fba9f)
+
+2. When the search is finished, Autopsy displays the results in the search results pane in the work area. Note the tab labeled, Keyword search 1- password.
+For each search you do in a case, Autopsy adds a new tab to help catalog your searches.
+![image](https://github.com/user-attachments/assets/0c8ed4b4-ff8e-48ac-ae60-11bde085682a)
+
+3. Click confirmation.txt.
+Notice that confirmation.txt file is found to contain the string ‘password.’
+![image](https://github.com/user-attachments/assets/14947637-43a4-456d-8902-cb9a13059b26)
+
+4. Click to expand Results > Keyword Hits > Single Literal Keyword Search and note there are 2 instances of the keyword ‘password’.
+![image](https://github.com/user-attachments/assets/3916bf30-13f1-4f3f-9117-980e4eaa72c5)
+
+
+<b>GENERATING A REPORT</b>
+Creating reports is an essential part of any digital forensics investigation. Using Autopsy, you can create reports in various formats. For this task, we will generate an HTML report
+
+<b>STEPS</b>
+
+1. Click Generate Report button at the top and Click the type of report you would like to generate under Report Modules - in this case choose HTML Report and click Next.
+   ![image](https://github.com/user-attachments/assets/0260df69-6cf5-4a90-8f21-6dd39e6a92ee)
+
+2. Leave All Results selected and then click Finish.
+![image](https://github.com/user-attachments/assets/4fc3218d-b98d-462b-9142-e94c352f4431)
+
+3. In the Report Generation Process dialog box, click Close.
+   ![image](https://github.com/user-attachments/assets/86fc6b10-004e-458a-ba7c-06af566c94dc)
+
+4. Click Reports in the navigation pane on the left and your report will appear in the right pane on the Listing tab
+   ![image](https://github.com/user-attachments/assets/73e4fee3-5cfa-4025-87c6-c56374a66eef)
+
+5. Double-click on the report, then choose to open it with your favorite browser to view the report.Double-click on the report, then choose to open it with your favorite browser to view the report.
+![image](https://github.com/user-attachments/assets/50544a53-3d31-4f41-88ca-e9d17cb585d1)
+
+</details>
+
+<details>
+<summary><b>SCENARIO BASED PROJECT</b></summary>
+
+<b>SCENARIO</b>
+
+The case in this project involves a suspicious death. Joshua Zarkan found his girlfriend’s dead body in her apartment and reported it. The first responding law enforcement officer seized a USB drive. A crime scene evidence technician skilled in data acquisition made an image of the USB drive with Autopsy and named it daylightTest.eve. Following the acquisition, the technician transported and secured the USB drive and placed it in a secure evidence locker at the police station. You have received the image file from the detective assigned to this case. He directs you to examine it and identify any evidentiary artifacts that might relate to this case.
+
+
+1. First, let's run the Autopsy app as an Admin and create a new case. Enter C1Prj01 as the case name, make C:\Work\Data files\Ch01\ the Base Directory and then click Next. Click Finish
+   ![image](https://github.com/user-attachments/assets/c12e3b0d-2c17-442e-9fb9-4b1f728fa4d4)
+
+
+2. To add an image file, click Disk Image or VM File, then click Next.
+   ![image](https://github.com/user-attachments/assets/9fb98885-9c37-428f-84ae-d72cb8843943)
+
+3. Navigate to C:\Program Files (x86)\Technology Pathways\ProDiscover\Sample Images, click All Files, then click daylightTest.eve and then click Open.
+![image](https://github.com/user-attachments/assets/f7750ede-4623-490d-b82d-0758371a47db)
+
+4. Click Next in the Configure Ingest Modules, then click Finish.
+   ![image](https://github.com/user-attachments/assets/43ade6b8-c0fc-4c91-9b76-3f6004b67241)
+
+ 5. Click to expand Views > File Types > By Extension > Documents > Plain Text (2), in the Listing area, notice the files that are listed  
+   ![image](https://github.com/user-attachments/assets/557ef144-673e-42b0-b069-4fb2082fe599)
+
+6. Right-click any file and click View in New Window. View the file, and then exit the program.
+![image](https://github.com/user-attachments/assets/3bc662fd-a17f-4478-92ac-428a686fca7c)
+
+7. If you decide to export a file, right-click the file and click Extract File(s). (Note: Creating a separate folder for exports is a good idea to keep your files organized.)
+In the Save As dialog box that opens, navigate to the location where you want to save the file, and then click Save.
+
+<b>FINAL REPORT</b>
+Upon examining the acquired image of the USB drive (daylightTest.eve), two plain text files were identified: winter.txt and summer.txt. The content of winter.txt includes the text "2 pm," while summer.txt contains the text "3 pm." These times may hold significance in relation to the case, possibly indicating key moments that could be relevant to the timeline of events surrounding the suspicious death. The presence of these files and their specific references to times could potentially correlate with statements or evidence already collected, and further analysis may be necessary to determine their connection to the incident. As such, these files will be further investigated to understand their context and potential relevance to the ongoing investigation.
+
+   
+
+
+
+
+</details>
 
 
 
