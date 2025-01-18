@@ -309,15 +309,19 @@ In the Save As dialog box that opens, navigate to the location where you want to
 
 <b>FINAL REPORT</b>
 Upon examining the acquired image of the USB drive (daylightTest.eve), two plain text files were identified: winter.txt and summer.txt. The content of winter.txt includes the text "2 pm," while summer.txt contains the text "3 pm." These times may hold significance in relation to the case, possibly indicating key moments that could be relevant to the timeline of events surrounding the suspicious death. The presence of these files and their specific references to times could potentially correlate with statements or evidence already collected, and further analysis may be necessary to determine their connection to the incident. As such, these files will be further investigated to understand their context and potential relevance to the ongoing investigation.
+</details>
 
-   
+<details>
+  <summary><b>SCENARIO 2</summary>
 
+In this project, you work for a large corporation’s IT security company. Your duties include conducting internal computing investigations and forensics examinations on company computing systems. A paralegal from the Law Department, Ms. Jones, asks you to examine a USB drive belonging to an employee who left the company and now works for a competitor. The Law Department is concerned that the former employee might possess sensitive company data. Ms. Jones wants to know whether the USB drive contains anything significant.
 
+In addition, she informs you that the former employee might have had access to confidential documents because a co-worker saw him accessing his manager’s computer on his last day of work. These confidential documents consist of 24 files with the text “fragment.” She wants you to locate any occurrences of these files on the USB drive’s bit-stream image.
+
+    <b>STEPS<b>
 
 
 </details>
-
-
 
 
 
