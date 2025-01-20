@@ -1,5 +1,58 @@
 # Computer-Forensics-Project
 
+Objective
+This repository documents a computer forensics project focused on acquiring and analyzing evidence from media devices. The project demonstrates the end-to-end process of forensic investigation, including evidence acquisition, preservation, and analysis, using industry-standard tools and techniques.
+
+
+## Key Activities
+1. **Evidence Acquisition**
+   - Identify and prepare media devices for forensic imaging.
+   - Create a bit-by-bit forensic image of the evidence media.
+
+2. **Evidence Preservation**
+   - Verify the integrity of acquired images using hash functions (e.g., MD5, SHA-256).
+   - Securely store forensic images to maintain the chain of custody.
+
+3. **Forensic Analysis**
+   - Extract and analyze data from the acquired images.
+   - Identify artifacts such as deleted files, metadata, and hidden information.
+
+4. **Report Generation**
+   - Document findings in a structured forensic report.
+   - Include key evidence, methodologies, and conclusions.
+
+## Tools and Technologies Used
+- **Autopsy:** Digital forensics platform for analyzing forensic images.
+- **FTK Imager:** Tool for creating forensic images and verifying integrity.
+- **Linux Commands:** Used for file system analysis and data extraction.
+- **Hex Editors:** For detailed analysis of binary files.
+
+## Skills Acquired
+- Proficiency in acquiring and preserving forensic evidence.
+- Use of hashing algorithms to ensure data integrity.
+- Analyzing and interpreting digital artifacts.
+- Writing detailed forensic reports.
+- Applying chain-of-custody principles in forensic investigations.
+
+
+## Instructions
+1. **Prepare the Environment**
+   - Install and configure necessary forensic tools.
+   - Set up a secure workstation for evidence handling.
+
+2. **Acquire Evidence**
+   - Use FTK Imager to create a forensic image of the target media.
+   - Verify the integrity of the image using hash values.
+
+3. **Analyze Evidence**
+   - Open the image in Autopsy or similar tools.
+   - Search for artifacts such as files, emails, and browser history.
+
+4. **Generate Reports**
+   - Compile findings in a structured forensic report.
+   - Include screenshots and hash values for validation.
+
+
 <details>
 <summary><b>LAB 1 EXPLORING THE WINDOWS FILE SYSTEM</b></summary>
 
