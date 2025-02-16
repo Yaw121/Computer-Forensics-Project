@@ -1,6 +1,7 @@
 # Computer-Forensics-Project
 
-Objective
+- Objective
+  
 This repository documents a computer forensics project focused on acquiring and analyzing evidence from media devices. The project demonstrates the end-to-end process of forensic investigation, including evidence acquisition, preservation, and analysis, using industry-standard tools and techniques.
 
 
